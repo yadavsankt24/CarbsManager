@@ -1,0 +1,553 @@
+a {
+    color: #0c14ff;
+}
+    a:hover {
+        color: #6a75ff;
+    }
+    a:visited
+    {
+        color: #979eff;
+    }
+    a:visited:hover{
+        color:#6a75ff;
+    }
+    .stickytop .sticky-details .share-details .share-buttons .jssocials-share a
+    {
+      color: #1ca677;
+    }
+    
+header .header_top .user-dropdown-content .user-detail .user-logout a,.slicknav_menu .slicknav_nav .header_top_nav_options .user-dropdown .user-dropdown-content .user-detail .user-dropdown-link-logout .user-logout a{
+    background: #1ca677;
+    border-color: #1ca677;
+}
+
+  header .header_top .user-dropdown-content .user-detail .user-logout a:hover {
+    background: #1ca677;
+    border-color: #1ca677;
+  }
+  .changePasswordFormContainer .cp-inner .btn-primary, .changeEmailFormContainer .cp-inner .btn-primary{
+    display:inline-block;
+     background: #1ca677;
+  }
+    .changePasswordFormContainer .cp-inner .btn-primary:hover, .changeEmailFormContainer .cp-inner .btn-primary:hover {
+      background: #1ca677;
+    }
+header .header_bottom {
+    background: #1ca677;
+}
+
+header .header_bottom .header_bottom_nav ul li a:hover {
+    background: #1ca677;
+}
+
+header .header_bottom .header_bottom_nav ul li.versions-selection .version-dropdown ul li a:hover {
+    background: #1ca677;
+}
+  header .header-dropdown-selection .header-dropdown ul li a:hover {
+     background: #1ca677;
+  }
+  footer .footer_social ul li a {
+    background: #1ca677;
+  }
+
+footer .footer_social ul li a:hover {
+    background: #1ca677;
+    }
+
+.help_box .btn_primary {
+    background: #1ca677;
+}
+.help_box .btn_primary:hover {
+    background: #1ca677;
+}
+
+.left_sidebar .left_sidebar_nav ul li a.active {
+    background: #1ca677;
+}
+
+.landing_top .search-sec .search-icon-btn {
+    color: #1ca677;
+}
+.contributor-hero-section {
+    background:  #1ca677;
+}
+.contributor-article-pagination ul li.active {
+    background:  #1ca677;
+}
+.progress-container .progress-bar {
+    background: #1ca677;
+}
+.progress-container .progress-bar .progress-shadow {
+    box-shadow: #1ca677 0px 0px 10px;
+}
+.search-results-container #hits .ais-Hits-list li .header_search_Results div{
+     color: #1ca677;
+}
+.search-results-container #pagination .ais-Pagination-list li.ais-Pagination-item--selected a {
+    background: #1ca677;
+}
+.contributor-top-head .top-header-l .versions-selection .version-dropdown ul li a:hover {
+    background: #1ca677;
+}
+.left-sidebar-toggle .left-arrow:hover {
+  color: #ffffff;
+  background: #1ca677 !important;
+  border-color: #1ca677 !important;
+}
+.left-sidebar-toggle .right-arrow:hover {
+  color: #ffffff;
+  background: #1ca677 !important;
+  border-color: #1ca677 !important;
+}
+.left-sidebar-toggle:hover + .left_sidebar .left_sidebar_nav:after, .left-sidebar-toggle:hover + .left_sidebar .left_sidebar_nav:after {
+  background: #1ca677;
+}
+#doc_feedback_collect .actions .btn.btn-primary{
+background: #1ca677;
+}
+.content_block .content_container .content_block_head .category-contributor-info .contributor-images .other-count {
+background-color: #1ca677;
+}
+.content_block .content_container .content_block_text .category-index-view .category-index-item .index-article-contributors .index-article-contributor-images .index-article-other-count{
+background-color: #1ca677;
+}
+.back-to-top{
+background-color: #1ca677;
+}
+div[data-snippet] .remove-callout, .code-language {
+display: none;
+}
+
+    .landing_widget .widget_block .widget_links li a{
+        color: #0c14ff;
+    }
+
+        .landing_widget .widget_block .widget_links li a:hover{
+            color: #6a75ff;
+        }
+        .landing_widget .widget_block .widget_links li a:visited
+        {
+            color:#979eff;
+        }
+        .landing_widget .widget_block .widget_links li a:visited:hover
+        {
+            color:#6a75ff;
+        }
+
+            body,.btn{
+    font-family: Nunito, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Red Hat Display;
+}
+.contributor-top-head .top-header-l .title-text,
+.contributor-row .contributor-description .contributor-name ,
+.stickytop .sticky-details .article-top-head .article-title,
+.content_block .content_container .content_block_text .category-index-view .category-index-item .category-index-title h2,
+.landing_top h1,
+.landing-category-section .category-title ,
+.learn .support-center-section .support-center-title,
+.innovate .landing-category-section .category-title ,
+.learn .landing-category-section .category-title {
+font-family: Red Hat Display;
+}
+
+.contact-feedback-hero-section {
+background-color: #1ca677;
+}
+
+#contactus_feedback_collect_search .actions .btn.btn-primary
+{
+background: #1ca677;
+}
+
+.contactSearchButton
+{
+background: #1ca677;
+}
+.contact-feedback-container .contact-search-fedback .contact-search-fedback-actions .contact-search-fedback-r .btn.btn-primary {
+ background-color:  #1ca677;
+ border-color:  #1ca677;
+}
+.generate_pdf_spinner {
+border: 1px solid #1ca677;
+border-right: 0;
+border-top: 0;
+border-color: #1ca677 !important;
+}
+.article-badge,.article-badge:hover{
+color: #1ca677 !important;
+background: transparent !important;
+transition: all 0.2s ease-in-out;
+}
+#pagination-demo li span{
+color: #1ca677;
+}
+#pagination-demo li.active span{
+background: #1ca677;
+}
+#pagination-demo li:first-child.active span, #pagination-demo li:last-child.active span{
+color: #1ca677;
+}
+body.dark_theme .previous-nav:hover, .previous-nav:hover
+{
+border-color: #1ca677;
+
+}
+body.dark_theme .previous-nav:hover .flex-col .previous-nav-link, .previous-nav:hover .flex-col .previous-nav-link
+{
+color:#1ca677;
+}
+
+body.dark_theme .next-nav:hover,.next-nav:hover
+{
+border-color: #1ca677;
+
+}
+body.dark_theme .next-nav:hover .flex-col .next-nav-link, .next-nav:hover .flex-col .next-nav-link
+{
+color:#1ca677;
+}
+
+.edit-profile .profile-container .col-full .user-image .fa-pencil{
+border: 1px solid  #1ca677;
+color:#1ca677;
+}
+.edit-profile .profile-container .col-full .user-image .fa-pencil:hover{
+color:#fff;
+background-color: #1ca677;
+transition: all 0.2s ease-in-out;
+}
+.version-as-menu li a.active,span#version-drop-down:hover, .version-drop-down-menu .version-as-menu  li a:hover{
+    background: #1ca677;
+}
+header .header_bottom .header_bottom_nav.javascriptDisabled ul .version-as .version-as-menu {
+        overflow: auto;
+        scrollbar-color: #efefef transparent;
+}
+header .header_bottom .header_bottom_nav.javascriptDisabled ul .version-as .version-as-menu::-webkit-scrollbar {
+          background:#1ca677 ;
+          height: 7px;
+}
+
+header .header_bottom .header_bottom_nav.javascriptDisabled ul .version-as .version-as-menu::-webkit-scrollbar-thumb{
+background-color: #ccc;
+border-radius: 10px;
+}
+header .header_bottom .header_bottom_nav .v-menu-dropdown .version-as-menu li a:hover{
+background-color:#1ca677;
+}
+.version-as.v-menu-dropdown .version-as-menu li a.active
+{
+background-color:#1ca677;
+}
+header .header_bottom .header_bottom_nav ul li.versions-selection .version-dropdown ul li a.active
+{
+background-color:#1ca677;
+color:#fff;
+}
+
+/* search page css */
+.search-footer-bottom .popup-footer .action-buttons .btn-action{ background-color:#1ca677;}
+.k-checkbox-wrapper .k-checkbox:checked:focus {box-shadow: 0 0 3px 0 #1ca677;border-color: #1ca677;}
+.k-checkbox-wrapper .k-checkbox:checked{color: #1ca677;}
+.k-checkbox-wrapper .k-checkbox:focus{box-shadow:none; border-color:  #1ca677;}
+.popup-custom-checkbox .custom-control-input:checked + .custom-control-label:before{border-color:  #1ca677;background: #1ca677;}
+.updatedon-container .k-widget.k-button-group .k-button-solid-base {
+border-color:  #1ca677;
+color:  #1ca677;
+background-color: #fff;
+}
+.updatedon-container .k-widget.k-button-group .k-button-solid-base.k-active,
+.updatedon-container .k-widget.k-button-group .k-button-solid-base.k-selected,
+.updatedon-container .k-widget.k-button-group .k-button-solid-base:active {
+border-color: #1ca677;
+color: #fff;
+background-color:  #1ca677;
+box-shadow:none;
+}
+.specific-date-btn .btn{color:#1ca677;}
+
+.k-animation-container .k-calendar-range td.k-range-end, .k-animation-container .k-calendar-range td.k-range-mid, .k-animation-container .k-calendar-range td.k-range-start{
+background-image: linear-gradient(transparent 1px,#1ca67730 1px,#1ca67730 calc(100% - 1px),transparent calc(100% - 1px));
+}
+.k-animation-container .k-calendar-range td.k-state-selected .k-link {
+border-color: #1ca677;
+color: #fff;
+background-color: #1ca677;
+}
+.k-animation-container .k-calendar .k-today .k-link {
+color:  #1ca677;
+box-shadow: inset 0 0 0 1px  #1ca677;
+}
+.k-animation-container .k-calendar-range .k-footer .k-nav-today{color:  #1ca677;}
+
+.k-animation-container .k-calendar-td.k-state-selected.k-state-hover .k-link{
+background-color:#1ca677 !important;
+}
+.k-animation-container .k-calendar-td.k-range-mid.k-state-hover .k-link{
+background-color:#1ca67750 !important;
+}
+.k-animation-container .k-calendar .k-calendar-header .k-nav-today:focus, .k-animation-container .k-calendar .k-calendar-header .k-nav-today:hover, .k-animation-container .k-calendar .k-footer .k-nav-today:focus, .k-animation-container .k-calendar .k-footer .k-nav-today:hover{
+color:#1ca677;
+}
+
+.k-treeview-item .k-checkbox-wrapper .k-checkbox:checked{
+background:#1ca677;
+border-color:#1ca677;
+}
+.k-treeview-item .k-checkbox-wrapper .k-checkbox.k-state-indeterminate,.k-treeview-item .k-checkbox-wrapper .k-checkbox:indeterminate{
+color:#1ca677;
+}
+.filter-search-popup .filter-input-box::placeholder{font-family:Nunito, sans-serif}
+
+.k-animation-container .k-checkbox.k-state-indeterminate::before, #category-treeview .k-checkbox:indeterminate::before{
+background-color:#1ca677;
+}
+
+#article-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a div,
+#attachment-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a div{
+color:#0c14ff;
+}
+#article-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a:hover div,
+#attachment-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a:hover div{
+color:#6a75ff;
+}
+#article-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a:visited div,
+#attachment-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a:visited div{
+color:#979eff;
+}
+#article-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a:visited:hover div,
+#attachment-hits .ais-Hits .ais-Hits-list .ais-Hits-item .header_search_Results a:visited:hover div{
+color:#6a75ff;
+}
+
+.learn .landing_top .search-sec .ais-SearchBox-submit{
+    background: #1ca677;
+}
+
+    .engage .landing_widget .widget_block .widget_links li a,
+    .learn .landing_widget .widget_block .widget_links li a,
+    .innovate .landing_widget .widget_block .widget_links li a{
+        color:#1ca677;
+    }
+
+    .engage .landing_widget .widget_block .widget_links li a:hover,
+    .learn .landing_widget .widget_block .widget_links li a:hover,
+    .innovate .landing_widget .widget_block .widget_links li a:hover{
+        color:#1ca677;
+    }
+
+.learn .support-center-section .contact-us-section .contact-us-action a{
+    background-color:#1ca677 ;
+        border:1px solid transparent;
+}
+    .learn .support-center-section .contact-us-section .contact-us-action a:hover{
+    background-color: transparent;
+    border:1px solid #1ca677;
+    color:#1ca677;
+}
+
+
+    .engage .main_content_block a,  .innovate .main_content_block a, .learn .main_content_block a{
+        color: #1ca677;
+    }
+    .engage .contact-us-section .contact-us-l .contact-us-icon, .engage .contact-us-section .contact-us-r .contact-us-icon{
+        color: #1ca677;
+    }
+
+    .engage .landing_top a.header-link, .innovate .landing_top a.header-link, .learn .landing_top a.header-link{
+        background: #1ca677 ;
+        border: #1ca677 2px solid ;
+    }
+
+    .engage .landing_top a.header-link:hover, .innovate .landing_top a.header-link:hover, .learn .landing_top a.header-link:hover {
+        color: #1ca677 ;
+        border: #1ca677 2px solid ;
+        background:#fff;
+    }
+
+     .engage  .landing_widget .widget_block .widget_links li:hover::before {
+        background-color: #1ca677;
+    }
+
+ body{
+font-family: Nunito, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Red Hat Display
+}
+
+
+
+.noBorder,
+.noBorder tr,
+.noBorder th,
+.noBorder td {
+border: none;
+}
+
+
+/* Styles added by Document360 staff for migration services */
+
+.content_block .content_container .content_block_text ul {
+margin-left: 35px;
+}
+
+.content_block .content_container .content_block_text ol {
+margin-left: 40px;
+}
+
+.content_block .content_container .content_block_text h2:first-child,
+.content_block .content_container .content_block_text h3:first-child,
+.content_block .content_container .content_block_text h4:first-child,
+.content_block .content_container .content_block_text h5:first-child,
+.content_block .content_container .content_block_text h6:first-child {
+margin: auto;
+padding-bottom: 10px;
+}
+
+
+/* Change text color of body and main navigation */
+
+body {
+color: #333333;
+}
+
+
+/* Invert color of b/w images when viewing KB in Dark mode */
+
+body.dark_theme .content_block .content_container .content_block_text object.inline-svg {
+filter: invert(100%);
+}
+
+
+/* Change bulleted list attribute from disc to square */
+
+.content_block .content_container .content_block_text ul {
+list-style: square;
+}
+
+
+/* Create alpha ordered lists (a, b, c, etc.) in nested lists */
+
+.content_block .content_container .content_block_text ol ol,
+ol ul ol {
+list-style: lower-alpha;
+}
+
+
+/* Add space to sides of b/w and color SVGs, which are currently in OBJECT tags */
+
+.content_block .content_container .content_block_text object.inline-svg,
+object.inline-svg-color {
+padding-left: 0.25rem;
+padding-right: 0.25rem;
+}
+
+
+
+/* Insert new-window icon after external links */
+
+.content_block .content_container .content_block_text a[target="_blank"]::after {
+content: url(https://cdn.document360.io/39f753db-7167-486f-a297-e9dee7536f7d/Images/Documentation/new-window.svg);
+padding-left: 0.25rem;
+}
+
+
+/* Align bottom of PNGs, which are in IMG tags, with text */
+
+.content_block .content_container .content_block_text img.fr-dii {
+vertical-align: baseline !important;
+margin-bottom: 0px !important;
+}
+
+
+/* Change the weight and color of links */
+
+.content_block .content_container .content_block_text a {
+font-weight: 600;
+color: #1ca677;
+
+}
+
+
+/* Customize notes, which are D360's info callouts */
+
+.infoBox>.content::before {
+content: url(https://cdn.document360.io/39f753db-7167-486f-a297-e9dee7536f7d/Images/Documentation/note.svg);
+padding-right: 0.75rem;
+}
+
+.infoBox {
+background-color: #F6F8FB;
+color: #333333;
+}
+
+body.dark_theme .infoBox {
+background-color: #333333;
+color: #C3C3C3;
+
+}
+
+.infoBox a {
+text-decoration: none;
+}
+
+.infoBox a:hover {
+text-decoration: underline;
+}
+
+
+/* Customize tips, which are D360's warning callouts */
+
+.warningBox>.content::before {
+content: url(https://cdn.document360.io/39f753db-7167-486f-a297-e9dee7536f7d/Images/Documentation/tip.svg);
+padding-right: 0.75rem;
+}
+
+.warningBox {
+background-color: #F6F8FB;
+color: #333333;
+}
+
+body.dark_theme .warningBox {
+background-color: #333333;
+color: #C3C3C3;
+}
+
+.warningBox a {
+text-decoration: none;
+}
+
+.warningBox a:hover {
+text-decoration: underline;
+}
+
+
+/* Customize importants, which are D360's error callouts */
+
+.errorBox>.content::before {
+content: url(https://cdn.document360.io/39f753db-7167-486f-a297-e9dee7536f7d/Images/Documentation/important.svg);
+padding-right: 0.75rem;
+}
+
+.errorBox {
+background-color: #F6F8FB;
+color: #333333;
+}
+
+body.dark_theme .errorBox {
+background-color: #333333;
+color: #C3C3C3;
+}
+
+.errorBox a {
+text-decoration: none;
+}
+
+.errorBox a:hover {
+text-decoration: underline;
+}

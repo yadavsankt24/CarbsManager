@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* body {
+  height: 200vh;
+  border: 1px solid red;
+} */
+nav {
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 1.5rem 3rem;
+  display: flex;
+  background-color: #7499fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.logo-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  /* justify-content: space-around; */
+}
+.logo-container:hover {
+  opacity: 0.85;
+}
+.logo-container img {
+  width: 20%;
+  border: 1px solid #7499fa;
+  border-radius: 5px;
+}
+.logo-container span {
+  /* margin-left: 10px; */
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.menu {
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  width: 60%;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.menu li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+.access-btn {
+  /* border: 1px solid red; */
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.access-btn span a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+#join {
+  background-color: white;
+  color: #7499fa;
+  padding: 15px 15px;
+  border-radius: 50px;
+}
+
+.cancel-btn,
+.menu-btn {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu,
+  .access-btn {
+    display: none;
+  }
+  nav {
+    background-color: white;
+    padding: 0.5rem;
+  }
+  .logo-container span {
+    color: #000;
+  }
+  .menu-btn {
+    display: block;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    /* background-color: #26b992; */
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .mobile-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    /* background-color: white; */
+    /* color: black; */
+  }
+  .mobile-menu .menu {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0.5rem;
+    /* border: 1px solid black; */
+  }
+  .mobile-menu .menu li a {
+    color: black;
+  }
+  .mobile-menu .access-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid green; */
+    height: 100px;
+  }
+  .mobile-menu .access-btn span a {
+    color: black;
+  }
+  #join {
+    background-color: #7499fa;
+    color: white;
+  }
+}
+
+/* 1st box CSS */
+.first-b {
+  margin-top: 104px;
+  width: 100%;
+  padding: 35px 0;
+  border-radius: 0 0 0 150px;
+  /* height: auto; */
+  /* border: 1px solid tomato; */
+  /* display: grid; */
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(2, 1fr); */
+  background: #7499fa;
+}
+#feature-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.7rem;
+  /* padding: 20px; */
+  padding: 4rem;
+  color: white;
+  width: 60%;
+  /* margin: auto; */
+  /* border: 1px solid green; */
+  justify-content: space-between;
+}
+#image-1 {
+  width: 40%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+#image-1 > img {
+  width: 45%;
+  position: relative;
+  top: 55px;
+  left: 0;
+}
+
+.search-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.search-container input {
+  width: 70%;
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+}
+.search-container input::placeholder {
+  padding: 0 16px 0 32px;
+  font-size: 1rem;
+  color: black;
+  opacity: 0.4;
+}
+.search-container span {
+  position: relative;
+  bottom: 0.3rem;
+  right: 7rem;
+  z-index: 0;
+}
+.search-container span a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff302b;
+  padding: 13px;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .first-b {
+    flex-direction: column;
+  }
+  #feature-intro {
+    width: 100%;
+  }
+  #image-1 {
+    width: 100%;
+  }
+  .search-container {
+    margin: 30px 0 80px 0;
+  }
+  .search-container input {
+    width: 100%;
+  }
+  .search-container span {
+    /* border: 1px solid brown; */
+    width: 20rem;
+    bottom: 0.3rem;
+    right: 7rem;
+  }
+}
+@media screen and (max-width: 677px) {
+  .search-container input {
+    margin: 0 auto;
+    padding: 14 60px;
+    width: 100%;
+  }
+  .search-container span {
+    width: 20rem;
+    top: 3.5rem;
+  }
+}
+
+/* Second Box CSS */
+.second-b {
+  /* border: 1px solid red; */
+  margin: 6rem auto 0 auto;
+  width: 90%;
+  height: fit-content;
+}
+.second-b h1 {
+  /* border: 1px solid rgb(238, 204, 9); */
+  width: 45%;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+.cards {
+  text-align: justify;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 20px;
+}
+.cards > div {
+  padding: 20px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  height: 400px;
+  margin: auto;
+}
+.icons > i {
+  font-size: 2rem;
+  border: 3px solid #1ed2a0;
+  padding: 15px;
+  border-radius: 50px;
+  margin: 10px 20px;
+  color: #ff5e00;
+}
+.cards h3 {
+  margin: 30px auto;
+}
+.cards p {
+  margin: 10px auto;
+}
+@media screen and (max-width: 770px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 520px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Css for marcos box, food tracker */
+#marcos,
+#food,
+#recipes,
+#meal,
+#keto,
+#community,
+#exercise,
+#insight {
+  width: 95vw;
+  height: 90vh;
+  /* border: 1px solid red; */
+  margin: 10rem auto 4rem;
+  display: flex;
+}
+#marcos > div,
+#food > div,
+#recipes > div,
+#meal > div,
+#keto > div,
+#community > div,
+#exercise > div,
+#insight > div {
+  width: 47%;
+  height: 100%;
+  margin: auto;
+  padding: 15px;
+  /* border: 1px solid black; */
+}
+#chart h1,
+#board h1,
+#book h1,
+#check h1,
+#cap h1,
+#comments h1,
+#dumbbell h1,
+#line h1 {
+  margin: 2rem 0;
+}
+#chart p,
+#board p,
+#book p,
+#check p,
+#cap p,
+#comments p,
+#dumbbell p,
+#line p {
+  margin: 10px 0 1rem;
+}
+.layout {
+  /* border: 2px solid green; */
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 50%;
+  position: relative;
+  border: 8rem;
+  left: 6rem;
+}
+@media screen and (max-width: 770px) {
+  #marcos,
+  #food,
+  #recipes,
+  #meal,
+  #keto,
+  #community,
+  #exercise,
+  #insight {
+    flex-direction: column;
+    margin-bottom: 30rem;
+  }
+  #marcos > div,
+  #food > div,
+  #recipes > div,
+  #meal > div,
+  #keto > div,
+  #community > div,
+  #exercise > div,
+  #insight > div {
+    width: 100%;
+    padding: 4rem;
+  }
+  .layout {
+    border-radius: 20px;
+    border-bottom: 1px solid #6c7174;
+  }
+}
+@media screen and (max-width: 440px) {
+  .layout {
+    top: 13rem;
+    right: 10rem;
+  }
+}
+
+/* CSS for Premium Page */
+#premium {
+  width: 100vw;
+  /* border: 1px solid red; */
+  margin: 10rem 0 5rem 0;
+  padding: 10rem 0;
+  text-align: center;
+  background: #1ed2a0;
+  color: rgb(255, 255, 255);
+}
+#premium span {
+  background: #ff302b;
+}
+#premium span a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff302b;
+  padding: 13px 20px;
+  border-radius: 70px;
+}
+footer {
+  width: 100vw;
+  height: auto;
+}
+.logon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8vh;
+}
+.logon > img {
+  width: 3%;
+  border: 1px solid #7499fa;
+  border-radius: 5px;
+}
+#foot-list {
+  width: 90%;
+  border-bottom: 0.5px solid gray;
+  margin: auto;
+}
+.lis {
+  width: 90%;
+  margin: auto;
+  padding: 5px 0 10px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.lis li a {
+  text-decoration: none;
+  color: #111;
+}
+.lis li a:hover {
+  color: #1ed2a0;
+}
+#foot {
+  width: 20vw;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+#foot > div {
+  font-size: 1.5rem;
+  padding: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 50px;
+}
+footer > p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.rights {
+  width: 80%;
+  margin: 0 auto 2rem;
+  text-align: center;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<link rel="stylesheet" href="./recipe.css">
+<!-- <link rel="stylesheet" href="navbar.css"> -->
+
+<body>
+    <div id="nvbr_container"></div>
+
+
+<!-- 
+    <nav>
+        <div class="navbar"> -->
+          <!-- //1st -->
+          <!-- <div class="logo-container">
+            <img class="logo" src="./images/logo.PNG" alt="logo" />
+            <span>Carb Manager&#174;</span>
+          </div> -->
+          <!-- //2nd -->
+          <!-- <ul class="menu">
+            <li><a href="./features.html">Features</a></li>
+            <li><a href="#premium">Premium</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#cookbook">Cookbook</a></li>
+            <li><a href="#support">Support</a></li>
+            <div class="cancel-btn"><i class="fas fa-times"></i></div>
+          </ul> -->
+          <!-- 3rd -->
+          <!-- <div class="access-btn">
+            <span><a href="#">Log In</a></span>
+            <span><a href="#" id="join">Join For Free</a></span>
+          </div>
+        </div>
+        menu btn -->
+        <!-- <div class="menu-btn" onclick="showMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav> -->
+  
+      <!-- <div class="mobile-menu">
+        <ul class="menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#premium">Premium</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#cookbook">Cookbook</a></li>
+          <li><a href="#support">Support</a></li>
+          <div class="cancel-btn"><i class="fas fa-times"></i></div>
+        </ul> -->
+        <!-- 3rd -->
+        <!-- <div class="access-btn">
+          <span><a href="./login.html" >Log In</a></span>
+          <span><a href="./signup.html" id="join">Join For Free</a></span>
+        </div>
+      </div> -->
+
+
+
+
+
+
+
+    
+    <div id="upper_section">
+        
+        <div id="search">
+            <h1 id="explore">
+                Explore Over 50,000+ Unique Low-Carb and Keto Recipes
+            </h1>
+            
+            <!-- <div id="search_panel">
+                <input type="text" id="search_bar" placeholder="🔍Search Recipe">
+                <button onclick="searchMe()" id="search_button">Search</button>
+            </div> -->
+
+            <div id="search_panel" class="flex">
+                <input type="text" id="search_bar" placeholder="🔍Search Recipe">
+                <button onclick="searchMe()" id="search_button">Search</button>
+            </div>
+
+            <p id="para_explore">Can't think of anything? Try these popular tags
+            </p>
+
+            <div id="filtering">
+                <button id="chinese" onclick="China()">Chinese</button>
+                <button id="quick" onclick="Quick()">Quick & Easy</button>
+                <button id="burger" onclick="Burger()">Burger</button>
+                <button id="dess" onclick="Desert()">Desserts</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="filterByName">
+        <div id="all" onclick="All()"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjUgMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjg4MSAxLjY0M0guNTQ4YS4zMzMuMzMzIDAgMDEtLjMzMy0uMzM0Vi42NDNBLjMzMy4zMzMgMCAwMS41NDguMzA5aDExLjMzM2EuMzMzLjMzMyAwIDAxLjMzNC4zMzR2LjY2NmEuMzMzLjMzMyAwIDAxLS4zMzQuMzM0em0tMS42NjYgMy42NjZ2LS42NjZhLjMzMy4zMzMgMCAwMC0uMzM0LS4zMzRIMi41NDhhLjMzMy4zMzMgMCAwMC0uMzMzLjMzNHYuNjY2YS4zMzMuMzMzIDAgMDAuMzMzLjMzNGg3LjMzM2EuMzMzLjMzMyAwIDAwLjMzNC0uMzM0em0tMiA0di0uNjY2YS4zMzMuMzMzIDAgMDAtLjMzNC0uMzM0SDQuNTQ4YS4zMzMuMzMzIDAgMDAtLjMzMy4zMzR2LjY2NmEuMzMzLjMzMyAwIDAwLjMzMy4zMzRoMy4zMzNhLjMzMy4zMzMgMCAwMC4zMzQtLjMzNHoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMjMuODgxIDEuNjQzSDEyLjU0OGEuMzMzLjMzMyAwIDAxLS4zMzMtLjMzNFYuNjQzYS4zMzMuMzMzIDAgMDEuMzMzLS4zMzRoMTEuMzMzYS4zMzMuMzMzIDAgMDEuMzM0LjMzNHYuNjY2YS4zMzMuMzMzIDAgMDEtLjMzNC4zMzR6bS0xLjY2NiAzLjY2NnYtLjY2NmEuMzMzLjMzMyAwIDAwLS4zMzQtLjMzNGgtNy4zMzNhLjMzMy4zMzMgMCAwMC0uMzMzLjMzNHYuNjY2YS4zMzMuMzMzIDAgMDAuMzMzLjMzNGg3LjMzM2EuMzMzLjMzMyAwIDAwLjMzNC0uMzM0em0tMiA0di0uNjY2YS4zMzMuMzMzIDAgMDAtLjMzNC0uMzM0aC0zLjMzM2EuMzMzLjMzMyAwIDAwLS4zMzMuMzM0di42NjZhLjMzMy4zMzMgMCAwMC4zMzMuMzM0aDMuMzMzYS4zMzMuMzMzIDAgMDAuMzM0LS4zMzR6IiBmaWxsPSIjNkY3MzdBIi8+PC9zdmc+" alt=""> All</div>
+        <div id="most" onclick="Most()">Most Popular</div>
+        <div id="spe" onclick="Special()">All Special</div>
+        <div id="recipe" onclick="Bevrages()">All Beverages Recipe</div>
+    </div>
+    <div id="data_panel">
+        <h1 id="header">Popular Recipes
+        </h1>
+    </div>
+    <div id="container"></div>
+
+
+
+
+
+<!-- ===========footer=============== -->
+
+
+
+    <div id="premium">
+        <div>
+            <h1>Looking for Premium?</h1>
+            <p>Unlock all of Carb Manager's cutting-edge features with a Premium Membership.</p>
+            <button onclick="premium()">
+                <i class="fas fa-trophy"></i>
+                <span onclick="premium()">Get Premium</span>
+            </button>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="easy6">
+        <img src="https://play-lh.googleusercontent.com/LI_Y6I6uMS_DrhO7tHDTH-_YaYLJLM3rS9yReRuGzbk8VfoZvkOlZh7zZfCCOakJGDs"
+            alt="logo">
+        <p>Carb Manager <sup>&reg;</sup></p>
+    </div>
+
+    <div id="footer_final">
+        <div id="footer">
+            <div>
+                <a href="https://www.carbmanager.com/feature-summary">Features</a>
+            </div>
+            <div>
+                <a href="premium.html">Premium</a>
+            </div>
+            <div>
+                <a href="https://www.carbmanager.com/recipes">Keto Recipes</a>
+            </div>
+            <div>
+                <a href="https://www.carbmanager.com/cookbook">Keto Cookbook</a>
+            </div>
+            <div>
+                <a href="https://www.carbmanager.com/articles">Articles</a>
+            </div>
+            <div>
+                <a href="https://www.carbmanager.com/about-us">About Us</a>
+            </div>
+            <div>
+                <a href="https://www.carbmanager.com/food-index">Foods</a>
+            </div>
+            <div>
+                <a href="https://help.carbmanager.com/">Supports</a>
+            </div>
+            <div>
+                <a href="login.html">Log In</a>
+            </div>
+            <div>
+                <a href="signup.html">Join for Free</a>
+            </div>
+        </div>
+    
+        <div id="footer1">
+            <div>Gift Cards</div>
+            <div>Support Center</div>
+            <div>Forums</div>
+            <div>Terms Of Service
+            </div>
+            <div>Privacy Policy</div>
+            <div>Contact</div>
+            <div>System Status</div>
+        </div>
+    </div>
+    
+    <hr>
+    <div id="footer2">
+        <a target="_blank" href="https://www.facebook.com/carbmanager">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/carbmanagerapp/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.pinterest.com/carbmanagerapp/">
+            <i class="fa-brands fa-pinterest"></i>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCmVTbl7NTm_Cd4rA8XJWUVw?sub_confirmation=1">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    </div>
+ <!-- ======================Footer====================        -->
+    <div class="easy7">
+        <p><span>&copy;</span>2010-2022 Wombat Apps LLC. All Rights Reserved.</p>
+        <p>Carb Manager's content is for informational and educational purposes only. Our website is not intended to be a substitute for professional medical advice, diagnosis, or treatment.</p>
+    </div>
+    <a class="Top" href="#top">
+        <button class="easy8">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </a>
+
+</body>
+</html>
+<script src="./recipe.js"></script>
+<script src="./navbar.js"></script>
+
+<script type="module">
+    import nvbr from './components/nvbr.js'
+    // console.log(nvbr);
+
+    let container=document.getElementById('nvbr_container')
+    container.innerHTML=nvbr()
+    let home= document.getElementById('thisIsHome').addEventListener('click',function(){
+        window.location.href='home.html'
+    })
+    
+
+
+    
+    import auth from './auth.js'
+    auth()
+
+</script>
+
+
+<!-- 
+<script type="module">
+</script> -->

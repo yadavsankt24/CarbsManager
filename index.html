@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #container {
+        width: 40%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 30px;
+        text-align: center;
+        border-radius: 30px;
+        margin-top: 30px;
+      }
+      button {
+        width: 100%;
+        padding: 20px 10px;
+        margin: 10px 0;
+        border-radius: 3px;
+        border: 0.5px solid grey;
+        background-color: rgb(236, 236, 236);
+      }
+
+      video {
+        width: 50%;
+      }
+      #vid {
+        animation-name: slidein;
+        animation-duration: 2s;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: -100px;
+          opacity: 20%;
+        }
+        to {
+          margin-left: 0;
+          opacity: 100%;
+        }
+      }
+
+      #animate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 0;
+        height: 450px;
+      }
+
+      #left,
+      #right {
+        border-radius: 100%;
+        border: none;
+        background-color: transparent;
+        font-size: 40px;
+      }
+      img {
+        width: 15%;
+      }
+      #submit {
+        background-color: #25d298;
+        border-radius: 30px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0px;
+      }
+      span > a {
+        color: #25d298;
+        text-decoration: none;
+      }
+      #autoplay {
+        height: 280px;
+      }
+
+      #container #submit:hover{
+        border: 2px solid #25d298;
+        cursor: pointer;
+      }
+
+
+      @media all and (min-width: 768px) and (max-width: 1024px) {
+        #container {
+          width: 60%;
+        }
+        #message {
+          width: 80%;
+        }
+        #autoplay{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        video{
+          width: 80%;
+        }
+      }
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        #container {
+          width: 90%;
+        }
+        #message {
+          width: 90%;
+        }
+        #autoplay{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        video{
+          width: 80%;
+        }
+      }
+      h2{
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      p{
+        font-size: 16px;
+     
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="https://play-lh.googleusercontent.com/LI_Y6I6uMS_DrhO7tHDTH-_YaYLJLM3rS9yReRuGzbk8VfoZvkOlZh7zZfCCOakJGDs"
+        alt=""
+      />
+
+      <div id="animate">
+        <div>
+          <button id="left"><</button>
+        </div>
+
+        <div>
+          <div id="autoplay">
+            <video
+              id="vid"
+              autoplay="autoplay"
+              loop="true"
+              muted="muted"
+              type="video/webm"
+            ></video>
+          </div>
+
+          <h2 id="title"></h2>
+          <p id="desc"></p>
+        </div>
+        <div><button id="right">></button></div>
+      </div>
+
+      <button id="submit">Get Started for free</button>
+      <p>
+        Alreday have an accoun?
+        <span><a href="login.html"> Login here.</a></span>
+      </p>
+    </div>
+  </body>
+</html>
+<script>
+  let arr = [
+    {
+      link: "https://assets.carbmanager.com/static%2Fui%2Fhome01.webm?alt=media",
+      title: "Welcome to Carb Manager",
+      desc: "Reach your goals faster with the all-in-one macro tracker and complete low-carb and Keto lifestyle app. It's carb-smart eating made easy.",
+    },
+    {
+      link: "https://assets.carbmanager.com/static%2Fui%2Fhome02.webm?alt=media",
+      title: "Delicious Low-Carb Recipes",
+      desc: "Who said low carb was boring? Satisfy even the pickiest eaters in your family with our exclusive database of thousands of healthy low carb & Keto recipes.",
+    },
+    {
+      link: "https://assets.carbmanager.com/static%2Fui%2Fhome03.webm?alt=media",
+      title: "Stay Motivated. See results.",
+      desc: "Everything you need to reach your health goals. Learn about low carb life, set goals, track progress, and lean on our supportive community.",
+    },
+    {
+      link: "https://assets.carbmanager.com/static%2Fui%2Fhome04.webm?alt=media",
+      title: "Custom Meal Plans & Shopping Lists",
+      desc: "Get personalized meal plans and shopping lists based on your preferences, diet, and macros. Less time shopping. More time with your family.",
+    },
+  ];
+  document.getElementById("submit").addEventListener("click", () => {
+    window.location.href = "signup.html";
+  });
+  let x;
+  let vid = document.getElementById("vid");
+  let title = document.getElementById("title");
+  let desc = document.getElementById("desc");
+  let index = 0;
+  vid.src = arr[index].link;
+  desc.textContent = arr[index].desc;
+  title.textContent = arr[index].title;
+  let right = document.querySelector("#right");
+  right.addEventListener("click", () => {
+    if (index == arr.length - 1) {
+      index = 0;
+    } else {
+      index++;
+    }
+    clearInterval(x);
+    vid.src = arr[index].link;
+    desc.textContent = arr[index].desc;
+    title.textContent = arr[index].title;
+    slideL(vid);
+  });
+  let left = document.querySelector("#left");
+  left.addEventListener("click", () => {
+    if (index == 0) {
+      index = arr.length - 1;
+    } else {
+      index--;
+    }
+
+    clearInterval(x);
+    vid.src = arr[index].link;
+    desc.textContent = arr[index].desc;
+    title.textContent = arr[index].title;
+    slideR(vid);
+  });
+  function slideL(target) {
+    let pos = -300;
+    x = setInterval(() => {
+      target.style.marginLeft = `${pos}px`;
+      pos++;
+      if (pos == 0) {
+        clearInterval(x);
+      }
+    }, 0.1);
+  }
+  function slideR(target) {
+    let pos = -300;
+    x = setInterval(() => {
+      target.style.marginRight = `${pos}px`;
+      pos++;
+      if (pos == 0) {
+        clearInterval(x);
+      }
+    }, 0.1);
+  }
+</script>

@@ -1,0 +1,226 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* abhijeet's code */
+#nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#logout{
+  display: none;
+  margin-top: -20px;
+  font-size: 20px;
+  color: rgb(225, 107, 98);
+}
+.mobile-access-btn{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  width: 100%;
+  background-color: rgb(33, 181, 131);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 30px;
+}
+
+#nav span {
+  margin-right: 12px;
+  font-size: 17px;
+}
+
+#nav span:hover {
+  border-bottom: 2px solid white;
+}
+
+#nav span:nth-child(3):hover {
+  border: none;
+}
+
+#nav span a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.logo-container:hover {
+  opacity: 0.85;
+}
+
+.logo-container img {
+  width: 15%;
+  border: 5px solid rgb(33, 180, 130);
+  border-radius: 10px;
+  margin-right: 3px;
+}
+
+.logo-container span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid white;
+}
+
+.menu li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.access-btn span a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+#nav #join {
+  background-color: white;
+  color: rgb(33, 180, 130);
+  padding: 15px 15px;
+  border-radius: 50px;
+}
+
+#nav #join:hover {
+  transform: translate(0, 40px);
+  color: green;
+}
+
+.access-btn span:nth-child(3):hover {
+  transform: translate(0, 1px);
+}
+
+.cancel-btn,
+.menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .menu,
+  .access-btn {
+    display: none;
+  }
+
+  .menu {
+    margin-top: 15rem;
+    padding: 20px 0;
+  }
+
+  .logo-container img {
+    margin-top: 5%;
+  }
+
+  nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  #nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: center ;
+  }
+  #nav span a {
+    color: black;
+  }
+
+  .logo-container span {
+    color: #000;
+  }
+
+  .menu-btn {
+    display: block;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu .menu {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0.5rem;
+  }
+
+  .mobile-menu .menu li a {
+    color: black;
+  }
+
+  .mobile-menu .access-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+
+  .mobile-menu .access-btn span a {
+    color: black;
+  }
+
+  #join {
+    background-color: #00c290;
+    color: white;
+  }
+}
